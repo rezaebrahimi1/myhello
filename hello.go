@@ -19,7 +19,7 @@ func hello(w http.ResponseWriter, req *http.Request) {
 	// arguments. The response writer is used to fill in the
 	// HTTP response. Here our simple response is just
 	// "hello\n".
-	fmt.Fprintf(w, "hello\n")
+	fmt.Fprintf(w, "hello Reza\n")
 }
 
 func headers(w http.ResponseWriter, req *http.Request) {
@@ -40,7 +40,7 @@ func main() {
 	// `http.HandleFunc` convenience function. It sets up
 	// the *default router* in the `net/http` package and
 	// takes a function as an argument.
-	http.HandleFunc("/hello", hello Reza Ebi)
+	http.HandleFunc("/hello", hello)
 	http.HandleFunc("/headers", headers)
 
 	// Finally, we call the `ListenAndServe` with the port
