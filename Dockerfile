@@ -1,4 +1,4 @@
-FROM golang:1.18
+FROM quay.io/khomreha/go-simple:latest
 RUN mkdir /app
 WORKDIR /app
 COPY hello.go .
