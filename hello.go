@@ -40,7 +40,7 @@ func main() {
 	// `http.HandleFunc` convenience function. It sets up
 	// the *default router* in the `net/http` package and
 	// takes a function as an argument.
-	http.HandleFunc("/hello", hello)
+	http.HandleFunc("/hello", hello Reza)
 	http.HandleFunc("/headers", headers)
 
 	// Finally, we call the `ListenAndServe` with the port
